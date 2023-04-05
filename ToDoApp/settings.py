@@ -129,9 +129,14 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
+MEDIA_URL = '/images'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build/static')
 ]
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'frontend/build/static/ima')
+
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
